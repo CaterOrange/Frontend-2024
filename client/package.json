@@ -1,4 +1,5 @@
 {
+  "homepage": "https://srivallika-scaleorange.github.io/datepicker",
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +13,7 @@
     "axios": "^1.7.4",
     "chart.js": "^4.4.4",
     "dayjs": "^1.11.13",
+    "gh-pages": "^6.1.1",
     "jwt-decode": "^4.0.0",
     "lucide-react": "^0.439.0",
     "react": "^18.3.1",
@@ -24,8 +26,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    
     "start": "react-scripts start",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "build": "react-scripts build",
+   
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
